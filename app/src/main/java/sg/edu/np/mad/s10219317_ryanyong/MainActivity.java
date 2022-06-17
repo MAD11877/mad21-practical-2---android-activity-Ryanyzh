@@ -14,8 +14,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
+        TextView username = findViewById(R.id.title_text);
+        username.setText(user.name);
+
+        TextView description = findViewById(R.id.para_text);
+        description.setText(user.description);
+    }
 
 
     public void hiClick(View v){
